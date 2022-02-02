@@ -1,0 +1,4 @@
+Q.4
+$("p").css("background-color","red");
+Q.5 
+It will get  all the div with class name intro
