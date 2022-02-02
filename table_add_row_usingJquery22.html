@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	
+	
+	<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	
+	<style>
+		table {
+			margin: 25px 0;
+			width: 200px;
+		}
+
+		table th, table td {
+			padding: 10px;
+			text-align: center;
+		}
+
+		table, th, td {
+			border: 1px solid;
+		}
+	</style>
+</head>
+<table id="myTable">
+    <thead>
+               <tr>
+                   <th>Name</th>
+                   <th>Age</th>
+                   <th>City</th>
+               </tr>
+           </thead>
+     <tr>
+       <td>dipak</td>
+       <td>24</td>
+       <td>beed</td>
+     </tr>
+     <tr>
+       <td>rohit</td>
+       <td>23</td>
+       <td>pune</td>
+     </tr>
+     <tr>
+       <td>ronak </td>
+       <td> 25</td>
+       <td> pune</td>
+     </tr>
+   </table>
+   <br>
+   
+   
+   <input type="button" value="AddNewRow" id="newrows"> </input>
+	
+	
+	<script>
+		
+		$(document).ready(function () {
+			$("#newrows").click(function () {
+                var addcontrols="<tr>"
+                    addcontrols+="<td><input type='text' name='Name'></td>"
+                    addcontrols+="<td><input type='text' name='Age'></td>"
+                    addcontrols+="<td><input type='text' name='City'></td>";
+                    addcontrols+="</tr>";
+                    $("table tbody").append(addcontrols);
+
+				
+			});
+		});
+	</script>
+</body>
+</html>					
